@@ -1,0 +1,829 @@
+{
+  "unpublishedPage": {
+    "name": "ListingPage",
+    "slug": "listingpage",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 816,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 630,
+          "containerStyle": "none",
+          "snapRows": 125,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 58,
+          "minHeight": 600,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "none",
+              "widgetName": "ListingPageContainer",
+              "isCanvas": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
+              "displayName": "Tabs",
+              "iconSVG": "/static/media/icon.74a6d653.svg",
+              "topRow": 4,
+              "bottomRow": 61,
+              "parentRowSpace": 10,
+              "type": "TABS_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": false,
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 7,
+              "dynamicBindingPathList": [
+                {
+                  "key": "defaultTab"
+                },
+                {
+                  "key": "accentColor"
+                }
+              ],
+              "children": [
+                {
+                  "tabId": "tab1",
+                  "boxShadow": "none",
+                  "widgetName": "Canvas1",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 550,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 400,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "multiRowSelection": true,
+                      "boxShadow": "none",
+                      "isVisibleDownload": true,
+                      "iconSVG": "/static/media/icon.db8a9cbd.svg",
+                      "topRow": 16,
+                      "isSortable": "true",
+                      "type": "TABLE_WIDGET",
+                      "animateLoading": true,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "tableData"
+                        },
+                        {
+                          "key": "primaryColumns.id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.geo_region_id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.period.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.vehicles.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.type.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.commission.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.min_kms.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.incv_km_cap.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.per_km_rate.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.city.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.vehicles_name.computedValue"
+                        },
+                        {
+                          "key": "defaultSelectedRow"
+                        },
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "leftColumn": 2,
+                      "delimiter": ",",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisibleFilters": true,
+                      "isVisible": true,
+                      "enableClientSideSearch": true,
+                      "version": 3,
+                      "totalRecordsCount": 0,
+                      "isLoading": false,
+                      "childStylesheet": {
+                        "button": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "menuButton": {
+                          "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "iconButton": {
+                          "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        }
+                      },
+                      "borderRadius": "0px",
+                      "primaryColumnId": "id",
+                      "columnSizeMap": {
+                        "task": 245,
+                        "step": 62,
+                        "status": 75
+                      },
+                      "widgetName": "PayoutCampaignTable",
+                      "defaultPageSize": 0,
+                      "columnOrder": [
+                        "id",
+                        "city",
+                        "vehicles_name",
+                        "geo_region_id",
+                        "vehicles",
+                        "type",
+                        "period",
+                        "commission",
+                        "min_kms",
+                        "incv_km_cap",
+                        "per_km_rate"
+                      ],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isSortable"
+                        }
+                      ],
+                      "displayName": "Table",
+                      "bottomRow": 53,
+                      "parentRowSpace": 10,
+                      "defaultSelectedRow": "{{CampaignConfigData.findPositions(appsmith.URL.queryParams.campaigns)}}",
+                      "hideCard": false,
+                      "parentColumnSpace": 12.5625,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onRowSelected"
+                        }
+                      ],
+                      "primaryColumns": {
+                        "id": {
+                          "index": 0,
+                          "width": 150,
+                          "id": "id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "id",
+                          "computedValue": "{{PayoutCampaignTable.sanitizedTableData.map((currentRow) => ( currentRow.id))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
+                        },
+                        "geo_region_id": {
+                          "index": 1,
+                          "width": 150,
+                          "id": "geo_region_id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "geo_region_id",
+                          "computedValue": "{{PayoutCampaignTable.sanitizedTableData.map((currentRow) => ( currentRow.geo_region_id))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
+                        },
+                        "period": {
+                          "index": 3,
+                          "width": 150,
+                          "id": "period",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "period",
+                          "computedValue": "{{PayoutCampaignTable.sanitizedTableData.map((currentRow) => ( currentRow.period))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
+                        },
+                        "vehicles": {
+                          "index": 2,
+                          "width": 150,
+                          "id": "vehicles",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "vehicles",
+                          "computedValue": "{{PayoutCampaignTable.sanitizedTableData.map((currentRow) => ( currentRow.vehicles))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
+                        },
+                        "type": {
+                          "index": 3,
+                          "width": 150,
+                          "id": "type",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "type",
+                          "computedValue": "{{PayoutCampaignTable.sanitizedTableData.map((currentRow) => ( currentRow.type))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
+                        },
+                        "commission": {
+                          "index": 5,
+                          "width": 150,
+                          "id": "commission",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "commission",
+                          "computedValue": "{{PayoutCampaignTable.sanitizedTableData.map((currentRow) => ( currentRow.commission))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
+                        },
+                        "min_kms": {
+                          "index": 6,
+                          "width": 150,
+                          "id": "min_kms",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "min_kms",
+                          "computedValue": "{{PayoutCampaignTable.sanitizedTableData.map((currentRow) => ( currentRow.min_kms))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
+                        },
+                        "incv_km_cap": {
+                          "index": 7,
+                          "width": 150,
+                          "id": "incv_km_cap",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "incv_km_cap",
+                          "computedValue": "{{PayoutCampaignTable.sanitizedTableData.map((currentRow) => ( currentRow.incv_km_cap))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
+                        },
+                        "per_km_rate": {
+                          "index": 8,
+                          "width": 150,
+                          "id": "per_km_rate",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "per_km_rate",
+                          "computedValue": "{{PayoutCampaignTable.sanitizedTableData.map((currentRow) => ( currentRow.per_km_rate))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
+                        },
+                        "city": {
+                          "index": 9,
+                          "width": 150,
+                          "id": "city",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "city",
+                          "computedValue": "{{PayoutCampaignTable.sanitizedTableData.map((currentRow) => ( currentRow.city))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
+                        },
+                        "vehicles_name": {
+                          "index": 10,
+                          "width": 150,
+                          "id": "vehicles_name",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "vehicles_name",
+                          "computedValue": "{{PayoutCampaignTable.sanitizedTableData.map((currentRow) => ( currentRow.vehicles_name))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
+                        }
+                      },
+                      "onRowSelected": "{{setInterval(() => { \n\t // add code here \n}, 5000)}}",
+                      "key": "4y05i0eau1",
+                      "derivedColumns": {},
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 62,
+                      "textSize": "0.875rem",
+                      "widgetId": "740oo18u1a",
+                      "tableData": "{{CampaignConfigData.getCampaignConfig()}}",
+                      "label": "Data",
+                      "searchKey": "",
+                      "parentId": "ay5tbgeabv",
+                      "serverSidePaginationEnabled": false,
+                      "renderMode": "CANVAS",
+                      "horizontalAlignment": "LEFT",
+                      "isVisibleSearch": true,
+                      "isVisiblePagination": true,
+                      "verticalAlignment": "CENTER"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Text1",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "fontSize"
+                        }
+                      ],
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 11,
+                      "bottomRow": 15,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "parentColumnSpace": 12.5625,
+                      "dynamicTriggerPathList": [],
+                      "fontFamily": "System Default",
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Payout Campaign Configuration",
+                      "key": "95y1wkpg7l",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 48,
+                      "textAlign": "LEFT",
+                      "widgetId": "8s1etrqoul",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#2E3D49",
+                      "version": 1,
+                      "parentId": "ay5tbgeabv",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "fontSize": "1.5rem"
+                    },
+                    {
+                      "boxShadow": "0px 0px 4px 3px #F6F7F8",
+                      "widgetName": "IconButton1",
+                      "onClick": "{{navigateTo('CreatePage', {})}}",
+                      "buttonColor": "#a8a7ad",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "boxShadow"
+                        }
+                      ],
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634a.svg",
+                      "topRow": 11,
+                      "bottomRow": 15,
+                      "parentRowSpace": 10,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 12.5625,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 58,
+                      "dynamicBindingPathList": [],
+                      "isDisabled": false,
+                      "key": "xwppr4hx85",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 60,
+                      "iconName": "plus",
+                      "widgetId": "t5w9mjxzhh",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "ay5tbgeabv",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "buttonVariant": "PRIMARY",
+                      "boxShadowColor": "#F6F7F8"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Divider1",
+                      "thickness": 2,
+                      "displayName": "Divider",
+                      "iconSVG": "/static/media/icon.cbe8f608.svg",
+                      "topRow": 6,
+                      "bottomRow": 10,
+                      "parentRowSpace": 10,
+                      "type": "DIVIDER_WIDGET",
+                      "capType": "nc",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 11.6611328125,
+                      "leftColumn": 0,
+                      "key": "gcffag65qh",
+                      "dividerColor": "#EBEBEB",
+                      "labelTextSize": "0.875rem",
+                      "orientation": "horizontal",
+                      "strokeStyle": "solid",
+                      "rightColumn": 63,
+                      "widgetId": "ygc1c3jeod",
+                      "capSide": 0,
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "ay5tbgeabv",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px"
+                    },
+                    {
+                      "boxShadow": "0px 1px 3px #2E3D49",
+                      "widgetName": "IconButton2",
+                      "onClick": "{{LogoutCall.logout()}}",
+                      "buttonColor": "#F6F7F8",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "boxShadow"
+                        }
+                      ],
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634a.svg",
+                      "topRow": 2,
+                      "bottomRow": 6,
+                      "parentRowSpace": 10,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 11.6611328125,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 56,
+                      "dynamicBindingPathList": [],
+                      "isDisabled": false,
+                      "key": "60uxhghlsw",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 60,
+                      "iconName": "power",
+                      "widgetId": "b3q3np7o9e",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "ay5tbgeabv",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0.375rem",
+                      "buttonVariant": "PRIMARY",
+                      "boxShadowColor": "#2E3D49"
+                    },
+                    {
+                      "boxShadow": "0px 1px 3px rgba(0, 0, 0, 0.25)",
+                      "widgetName": "IconButton3",
+                      "onClick": "{{navigateTo('ListingPage', {})}}",
+                      "buttonColor": "#F6F7F8",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "boxShadow"
+                        }
+                      ],
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634a.svg",
+                      "topRow": 2,
+                      "bottomRow": 6,
+                      "parentRowSpace": 10,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 11.6611328125,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 4,
+                      "dynamicBindingPathList": [],
+                      "isDisabled": false,
+                      "key": "60uxhghlsw",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 8,
+                      "iconName": "home",
+                      "widgetId": "grgjs0rxsf",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "ay5tbgeabv",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0.375rem",
+                      "buttonVariant": "PRIMARY"
+                    }
+                  ],
+                  "isDisabled": false,
+                  "key": "wkqzjnlsuk",
+                  "labelTextSize": "0.875rem",
+                  "tabName": "Authenticated",
+                  "rightColumn": 301.5,
+                  "detachFromLayout": true,
+                  "widgetId": "ay5tbgeabv",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "jw51in4uwk",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "0px"
+                },
+                {
+                  "tabId": "tab2",
+                  "boxShadow": "none",
+                  "widgetName": "Canvas2",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 390,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 400,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Text2",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "parentColumnSpace": 11.6611328125,
+                      "dynamicTriggerPathList": [],
+                      "fontFamily": "System Default",
+                      "leftColumn": 4,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "You are not logged in. Click here to ",
+                      "key": "vn8oo2j8ac",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 26,
+                      "textAlign": "LEFT",
+                      "widgetId": "5kykgmythe",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "huvjtlpg2q",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "fontSize": "0.875rem"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Button1",
+                      "onClick": "{{navigateTo('Login')}}",
+                      "buttonColor": "#03B365",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca02633.svg",
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 11.6611328125,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 26,
+                      "dynamicBindingPathList": [],
+                      "text": "Login",
+                      "isDisabled": false,
+                      "key": "mb9arlps1f",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 34,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "hl0cuwcznd",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "huvjtlpg2q",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
+                    }
+                  ],
+                  "isDisabled": false,
+                  "key": "wkqzjnlsuk",
+                  "labelTextSize": "0.875rem",
+                  "tabName": "Unauthenticated",
+                  "rightColumn": 301.5,
+                  "detachFromLayout": true,
+                  "widgetId": "huvjtlpg2q",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "jw51in4uwk",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "0px"
+                }
+              ],
+              "key": "na1yo0giik",
+              "labelTextSize": "0.875rem",
+              "rightColumn": 59,
+              "widgetId": "jw51in4uwk",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "defaultTab": "{{IsAuthenticated.check()}}",
+              "shouldShowTabs": false,
+              "tabsObj": {
+                "tab1": {
+                  "label": "Authenticated",
+                  "id": "tab1",
+                  "widgetId": "ay5tbgeabv",
+                  "isVisible": true,
+                  "index": 0
+                },
+                "tab2": {
+                  "label": "Unauthenticated",
+                  "id": "tab2",
+                  "widgetId": "huvjtlpg2q",
+                  "isVisible": true,
+                  "index": 1
+                }
+              },
+              "isVisible": "true",
+              "version": 3,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0px"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "ListingPage_CampaignConfig",
+              "name": "CampaignConfig",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "ListingPage_GeoRegion",
+              "name": "GeoRegion",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "ListingPage_VehicleTypeData",
+              "name": "VehicleTypeData",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "widgetNames": [
+          "Button1",
+          "Canvas1",
+          "Canvas2",
+          "Divider1",
+          "IconButton1",
+          "IconButton2",
+          "IconButton3",
+          "ListingPageContainer",
+          "MainContainer",
+          "PayoutCampaignTable",
+          "Text1",
+          "Text2"
+        ],
+        "validOnPageLoadActions": true,
+        "id": "ListingPage",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "policies": [],
+  "gitSyncId": "6260fd83d030f71edbd113b0_6260fd83d030f71edbd113b2"
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "LogoutCall",
+    "pageId": "CreatePage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tlogout: () => {\n\t\tstoreValue(\"jwt\",undefined);\n\t\tnavigateTo(\"Login\");\n\t}\n}",
+    "variables": []
+  },
+  "id": "CreatePage_LogoutCall",
+  "deleted": false,
+  "gitSyncId": "6260fd83d030f71edbd113b0_626788c0d030f71edbd11480"
+}

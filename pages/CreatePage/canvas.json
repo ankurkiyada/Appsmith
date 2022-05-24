@@ -1,0 +1,1010 @@
+{
+  "unpublishedPage": {
+    "name": "CreatePage",
+    "slug": "createpage",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 816,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 680,
+          "containerStyle": "none",
+          "snapRows": 59,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 58,
+          "minHeight": 600,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "none",
+              "widgetName": "CreatePageContainer",
+              "isCanvas": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
+              "displayName": "Tabs",
+              "iconSVG": "/static/media/icon.74a6d653.svg",
+              "topRow": 4,
+              "bottomRow": 66,
+              "parentRowSpace": 10,
+              "type": "TABS_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": false,
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 5,
+              "dynamicBindingPathList": [
+                {
+                  "key": "defaultTab"
+                },
+                {
+                  "key": "accentColor"
+                }
+              ],
+              "children": [
+                {
+                  "tabId": "tab1",
+                  "boxShadow": "none",
+                  "widgetName": "Canvas1",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 550,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 400,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "boxShadow": "0px 1px 3px #2E3D49",
+                      "widgetName": "Logout",
+                      "onClick": "{{LogoutCall.logout()}}",
+                      "buttonColor": "#F6F7F8",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "boxShadow"
+                        }
+                      ],
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634a.svg",
+                      "topRow": 2,
+                      "bottomRow": 6,
+                      "parentRowSpace": 10,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 10.287109375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 56,
+                      "dynamicBindingPathList": [],
+                      "isDisabled": false,
+                      "key": "xwgk8ehwmh",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 60,
+                      "iconName": "power",
+                      "widgetId": "3sowz8irh7",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "qtimltgqwu",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0.375rem",
+                      "buttonVariant": "PRIMARY",
+                      "boxShadowColor": "#2E3D49"
+                    },
+                    {
+                      "boxShadow": "0px 1px 3px #2E3D49",
+                      "widgetName": "Home",
+                      "onClick": "{{navigateTo('ListingPage', {})}}",
+                      "buttonColor": "#F6F7F8",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "boxShadow"
+                        }
+                      ],
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634a.svg",
+                      "topRow": 2,
+                      "bottomRow": 6,
+                      "parentRowSpace": 10,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 10.287109375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 4,
+                      "dynamicBindingPathList": [],
+                      "isDisabled": false,
+                      "key": "u58bn9i0jk",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 8,
+                      "iconName": "home",
+                      "widgetId": "xatiy7q850",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "qtimltgqwu",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0.375rem",
+                      "buttonVariant": "PRIMARY",
+                      "boxShadowColor": "#2E3D49"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Divider1",
+                      "thickness": 2,
+                      "displayName": "Divider",
+                      "iconSVG": "/static/media/icon.cbe8f608.svg",
+                      "topRow": 6,
+                      "bottomRow": 10,
+                      "parentRowSpace": 10,
+                      "type": "DIVIDER_WIDGET",
+                      "capType": "nc",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 10.287109375,
+                      "leftColumn": 3,
+                      "dynamicBindingPathList": [],
+                      "key": "l0xc46s7no",
+                      "dividerColor": "#EBEBEB",
+                      "labelTextSize": "0.875rem",
+                      "orientation": "horizontal",
+                      "strokeStyle": "solid",
+                      "rightColumn": 61,
+                      "widgetId": "bb3cpqbhbi",
+                      "capSide": 0,
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "qtimltgqwu",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px"
+                    },
+                    {
+                      "schema": {
+                        "__root_schema__": {
+                          "children": {
+                            "city": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "",
+                              "fieldType": "Select",
+                              "sourceData": "",
+                              "isCustomField": false,
+                              "accessor": "city_id",
+                              "identifier": "city",
+                              "position": 0,
+                              "originalIdentifier": "city",
+                              "isDisabled": false,
+                              "isFilterable": true,
+                              "isRequired": true,
+                              "isVisible": true,
+                              "label": "City",
+                              "serverSideFiltering": false,
+                              "options": "{{GeoRegionsSelect.data}}",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "campaigns": {
+                              "children": {
+                                "fixed_percent_commission": {
+                                  "children": {
+                                    "active": {
+                                      "children": {},
+                                      "dataType": "boolean",
+                                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.campaigns.fixed_percent_commission.active))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                                      "fieldType": "Switch",
+                                      "sourceData": false,
+                                      "isCustomField": false,
+                                      "accessor": "active",
+                                      "identifier": "active",
+                                      "position": 0,
+                                      "originalIdentifier": "active",
+                                      "alignWidget": "LEFT",
+                                      "isDisabled": false,
+                                      "isRequired": false,
+                                      "isVisible": true,
+                                      "label": "Active",
+                                      "labelTextSize": "0.875rem",
+                                      "borderRadius": "0px",
+                                      "cellBorderRadius": "0px",
+                                      "boxShadow": "none",
+                                      "cellBoxShadow": "none",
+                                      "accentColor": "#03B365"
+                                    },
+                                    "commission_fraction": {
+                                      "children": {},
+                                      "dataType": "number",
+                                      "defaultValue": "",
+                                      "fieldType": "Number Input",
+                                      "sourceData": 0.15,
+                                      "isCustomField": false,
+                                      "accessor": "commission_fraction",
+                                      "identifier": "commission_fraction",
+                                      "position": 1,
+                                      "originalIdentifier": "commission_fraction",
+                                      "iconAlign": "left",
+                                      "isDisabled": false,
+                                      "isRequired": "{{((sourceData, formData, fieldState) => (formData.campaigns.fixed_percent_commission.active))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                                      "isSpellCheck": false,
+                                      "isVisible": "{{((sourceData, formData, fieldState) => (formData.campaigns.fixed_percent_commission.active))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                                      "label": "Commission Fraction",
+                                      "labelTextSize": "0.875rem",
+                                      "borderRadius": "0px",
+                                      "cellBorderRadius": "0px",
+                                      "boxShadow": "none",
+                                      "cellBoxShadow": "none",
+                                      "accentColor": "#03B365"
+                                    }
+                                  },
+                                  "dataType": "object",
+                                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.campaigns.fixed_percent_commission))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                                  "fieldType": "Object",
+                                  "sourceData": {
+                                    "active": false,
+                                    "commission_fraction": 0.15
+                                  },
+                                  "isCustomField": false,
+                                  "accessor": "fixed_percent_commission",
+                                  "identifier": "fixed_percent_commission",
+                                  "position": 1,
+                                  "originalIdentifier": "fixed_percent_commission",
+                                  "isDisabled": false,
+                                  "isRequired": false,
+                                  "isVisible": true,
+                                  "label": "Fixed Percent Commission",
+                                  "labelTextSize": "0.875rem",
+                                  "borderRadius": "0px",
+                                  "cellBorderRadius": "0px",
+                                  "boxShadow": "none",
+                                  "cellBoxShadow": "none",
+                                  "accentColor": "#03B365"
+                                },
+                                "trip_fare": {
+                                  "children": {
+                                    "active": {
+                                      "children": {},
+                                      "dataType": "boolean",
+                                      "defaultValue": "{{((sourceData, formData, fieldState) => (`false`))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                                      "fieldType": "Switch",
+                                      "sourceData": false,
+                                      "isCustomField": false,
+                                      "accessor": "active",
+                                      "identifier": "active",
+                                      "position": 0,
+                                      "originalIdentifier": "active",
+                                      "alignWidget": "LEFT",
+                                      "isDisabled": false,
+                                      "isRequired": false,
+                                      "isVisible": true,
+                                      "label": "Active",
+                                      "labelTextSize": "0.875rem",
+                                      "borderRadius": "0px",
+                                      "cellBorderRadius": "0px",
+                                      "boxShadow": "none",
+                                      "cellBoxShadow": "none",
+                                      "accentColor": "#03B365"
+                                    }
+                                  },
+                                  "dataType": "object",
+                                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.campaigns.trip_fare))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                                  "fieldType": "Object",
+                                  "sourceData": {
+                                    "active": false
+                                  },
+                                  "isCustomField": false,
+                                  "accessor": "trip_fare",
+                                  "identifier": "trip_fare",
+                                  "position": 0,
+                                  "originalIdentifier": "trip_fare",
+                                  "isDisabled": false,
+                                  "isRequired": false,
+                                  "isVisible": true,
+                                  "label": "Trip Fare",
+                                  "labelTextSize": "0.875rem",
+                                  "borderRadius": "0px",
+                                  "cellBorderRadius": "0px",
+                                  "boxShadow": "none",
+                                  "cellBoxShadow": "none",
+                                  "accentColor": "#03B365"
+                                },
+                                "dryrun": {
+                                  "children": {
+                                    "active": {
+                                      "children": {},
+                                      "dataType": "boolean",
+                                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.campaigns.dryrun.active))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                                      "fieldType": "Switch",
+                                      "sourceData": false,
+                                      "isCustomField": false,
+                                      "accessor": "active",
+                                      "identifier": "active",
+                                      "position": 0,
+                                      "originalIdentifier": "active",
+                                      "alignWidget": "LEFT",
+                                      "isDisabled": false,
+                                      "isRequired": false,
+                                      "isVisible": true,
+                                      "label": "Active",
+                                      "labelTextSize": "0.875rem",
+                                      "borderRadius": "0px",
+                                      "cellBorderRadius": "0px",
+                                      "boxShadow": "none",
+                                      "cellBoxShadow": "none",
+                                      "accentColor": "#03B365"
+                                    },
+                                    "min_kms": {
+                                      "children": {},
+                                      "dataType": "number",
+                                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.campaigns.dryrun.min_kms))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                                      "fieldType": "Number Input",
+                                      "sourceData": 2,
+                                      "isCustomField": false,
+                                      "accessor": "min_kms",
+                                      "identifier": "min_kms",
+                                      "position": 1,
+                                      "originalIdentifier": "min_kms",
+                                      "iconAlign": "left",
+                                      "isDisabled": false,
+                                      "isRequired": false,
+                                      "isSpellCheck": false,
+                                      "isVisible": true,
+                                      "label": "Min Kms",
+                                      "labelTextSize": "0.875rem",
+                                      "borderRadius": "0px",
+                                      "cellBorderRadius": "0px",
+                                      "boxShadow": "none",
+                                      "cellBoxShadow": "none",
+                                      "accentColor": "#03B365"
+                                    },
+                                    "incv_km_cap": {
+                                      "children": {},
+                                      "dataType": "number",
+                                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.campaigns.dryrun.incv_km_cap))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                                      "fieldType": "Number Input",
+                                      "sourceData": 10,
+                                      "isCustomField": false,
+                                      "accessor": "incv_km_cap",
+                                      "identifier": "incv_km_cap",
+                                      "position": 2,
+                                      "originalIdentifier": "incv_km_cap",
+                                      "iconAlign": "left",
+                                      "isDisabled": false,
+                                      "isRequired": false,
+                                      "isSpellCheck": false,
+                                      "isVisible": true,
+                                      "label": "Incv Km Cap",
+                                      "labelTextSize": "0.875rem",
+                                      "borderRadius": "0px",
+                                      "cellBorderRadius": "0px",
+                                      "boxShadow": "none",
+                                      "cellBoxShadow": "none",
+                                      "accentColor": "#03B365"
+                                    },
+                                    "per_km_rate": {
+                                      "children": {},
+                                      "dataType": "number",
+                                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.campaigns.dryrun.per_km_rate))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                                      "fieldType": "Number Input",
+                                      "sourceData": 8,
+                                      "isCustomField": false,
+                                      "accessor": "per_km_rate",
+                                      "identifier": "per_km_rate",
+                                      "position": 3,
+                                      "originalIdentifier": "per_km_rate",
+                                      "iconAlign": "left",
+                                      "isDisabled": false,
+                                      "isRequired": false,
+                                      "isSpellCheck": false,
+                                      "isVisible": true,
+                                      "label": "Per Km Rate",
+                                      "labelTextSize": "0.875rem",
+                                      "borderRadius": "0px",
+                                      "cellBorderRadius": "0px",
+                                      "boxShadow": "none",
+                                      "cellBoxShadow": "none",
+                                      "accentColor": "#03B365"
+                                    }
+                                  },
+                                  "dataType": "object",
+                                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.campaigns.dryrun))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                                  "fieldType": "Object",
+                                  "sourceData": {
+                                    "active": false,
+                                    "min_kms": 2,
+                                    "incv_km_cap": 10,
+                                    "per_km_rate": 8
+                                  },
+                                  "isCustomField": false,
+                                  "accessor": "dryrun",
+                                  "identifier": "dryrun",
+                                  "position": 2,
+                                  "originalIdentifier": "dryrun",
+                                  "isDisabled": false,
+                                  "isRequired": false,
+                                  "isVisible": true,
+                                  "label": "Dry run",
+                                  "labelTextSize": "0.875rem",
+                                  "borderRadius": "0px",
+                                  "cellBorderRadius": "0px",
+                                  "boxShadow": "none",
+                                  "cellBoxShadow": "none",
+                                  "accentColor": "#03B365"
+                                }
+                              },
+                              "dataType": "object",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.campaigns))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                              "fieldType": "Object",
+                              "sourceData": {
+                                "trip_fare": {
+                                  "active": false
+                                },
+                                "fixed_percent_commission": {
+                                  "active": false,
+                                  "commission_fraction": 0.15
+                                },
+                                "dryrun": {
+                                  "active": false,
+                                  "min_kms": 2,
+                                  "incv_km_cap": 10,
+                                  "per_km_rate": 8
+                                }
+                              },
+                              "isCustomField": false,
+                              "accessor": "campaigns",
+                              "identifier": "campaigns",
+                              "position": 2,
+                              "originalIdentifier": "campaigns",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "label": "Campaigns",
+                              "cellBorderColor": "#FFFFFF",
+                              "cellBackgroundColor": "#FFFFFF",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "vehicle": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.vehicle))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                              "fieldType": "Select",
+                              "sourceData": "",
+                              "isCustomField": false,
+                              "accessor": "vehicle_id",
+                              "identifier": "vehicle",
+                              "position": 1,
+                              "originalIdentifier": "vehicle",
+                              "isDisabled": false,
+                              "isFilterable": true,
+                              "isRequired": true,
+                              "isVisible": true,
+                              "label": "Vehicle",
+                              "serverSideFiltering": false,
+                              "options": "{{VehicleSelectionList.data}}",
+                              "placeholderText": "{{((sourceData, formData, fieldState) => (`Select a Vehicle`))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            }
+                          },
+                          "dataType": "object",
+                          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                          "fieldType": "Object",
+                          "sourceData": {
+                            "city": "",
+                            "vehicle": "",
+                            "campaigns": {
+                              "trip_fare": {
+                                "active": false
+                              },
+                              "fixed_percent_commission": {
+                                "active": false,
+                                "commission_fraction": 0.15
+                              },
+                              "dryrun": {
+                                "active": false,
+                                "min_kms": 2,
+                                "incv_km_cap": 10,
+                                "per_km_rate": 8
+                              }
+                            }
+                          },
+                          "isCustomField": false,
+                          "accessor": "__root_schema__",
+                          "identifier": "__root_schema__",
+                          "position": -1,
+                          "originalIdentifier": "__root_schema__",
+                          "isDisabled": false,
+                          "isRequired": false,
+                          "isVisible": true,
+                          "label": "",
+                          "labelTextSize": "0.875rem",
+                          "borderRadius": "0px",
+                          "cellBorderRadius": "0px",
+                          "boxShadow": "none",
+                          "cellBoxShadow": "none",
+                          "accentColor": "#03B365"
+                        }
+                      },
+                      "boxShadow": "0px 1px 3px #F6F7F8",
+                      "widgetName": "PayoutCampaignForm",
+                      "submitButtonStyles": {
+                        "buttonColor": "#F6F7F8",
+                        "buttonVariant": "PRIMARY",
+                        "borderRadius": "0.375rem",
+                        "boxShadow": "0px 1px 3px #231F20",
+                        "boxShadowColor": "#231F20"
+                      },
+                      "borderColor": "#231F20",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dry_run.children.active.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.fixed_percent_commission.children.active.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.trip_fare.children.active.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dry_run.children.min_kms.isVisible"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dry_run.children.min_kms.isRequired"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dry_run.children.incv_km_cap.isRequired"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dry_run.children.incv_km_cap.isVisible"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dry_run.children.per_km_rate.isRequired"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dry_run.children.per_km_rate.isVisible"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.fixed_percent_commission.children.commission_fraction.isRequired"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.fixed_percent_commission.children.commission_fraction.isVisible"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.active.defaultValue"
+                        },
+                        {
+                          "key": "boxShadow"
+                        },
+                        {
+                          "key": "submitButtonStyles.boxShadow"
+                        },
+                        {
+                          "key": "resetButtonStyles.boxShadow"
+                        }
+                      ],
+                      "displayName": "JSON Form",
+                      "iconSVG": "/static/media/icon.5b428de1.svg",
+                      "onSubmit": "{{CreateCampaignCall.create()}}",
+                      "topRow": 10,
+                      "bottomRow": 53,
+                      "fieldLimitExceeded": false,
+                      "parentRowSpace": 10,
+                      "title": "Payout Campaign",
+                      "type": "JSON_FORM_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 10.287109375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onSubmit"
+                        }
+                      ],
+                      "leftColumn": 18,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.trip_fare.children.active.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.fixed_percent_commission.children.commission_fraction.isVisible"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.fixed_percent_commission.children.commission_fraction.isRequired"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.fixed_percent_commission.children.active.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.city.options"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.fixed_percent_commission.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.trip_fare.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.vehicle.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.vehicle.options"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.vehicle.placeholderText"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.active.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.min_kms.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.incv_km_cap.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.per_km_rate.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.defaultValue"
+                        }
+                      ],
+                      "sourceData": "{ \n\t\"city\": \"\",\n\t\"vehicle\": \"\",\n\t\"campaigns\": {\n\t\n\t\t\t\"trip_fare\":{\n\t\t\t\t\"active\": false\n\t\t\t},\n\t\t\t\"dryrun\": {\n\t\t\t\t\"active\": false,\n\t\t\t\t\"min_kms\": 2,\n\t\t\t\t\"incv_km_cap\": 10,\n\t\t\t\t\"per_km_rate\": 8\n\t\t\t},\n\t\t\t\t\"fixed_percent_commission\":{\n\t\t\t\t\t\"active\": false,\t\t\t\t\"commission_fraction\": 0.15\n\t\t\t}\n\t}\n}",
+                      "showReset": true,
+                      "resetButtonLabel": "Reset",
+                      "key": "yty34hvdju",
+                      "labelTextSize": "0.875rem",
+                      "backgroundColor": "#F6F7F8",
+                      "rightColumn": 43,
+                      "autoGenerateForm": true,
+                      "widgetId": "ok3yh26bz0",
+                      "resetButtonStyles": {
+                        "buttonColor": "#FFFFFF",
+                        "buttonVariant": "PRIMARY",
+                        "borderRadius": "0.375rem",
+                        "boxShadow": "0px 1px 3px #231F20",
+                        "boxShadowColor": "#231F20"
+                      },
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "qtimltgqwu",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "scrollContents": true,
+                      "fixedFooter": true,
+                      "submitButtonLabel": "Submit",
+                      "childStylesheet": {
+                        "ARRAY": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "cellBoxShadow": "none"
+                        },
+                        "OBJECT": {
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "cellBoxShadow": "none"
+                        },
+                        "CHECKBOX": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                        },
+                        "CURRENCY_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "DATEPICKER": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "EMAIL_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "MULTISELECT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "MULTILINE_TEXT_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "NUMBER_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "PASSWORD_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "PHONE_NUMBER_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "RADIO_GROUP": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "boxShadow": "none"
+                        },
+                        "SELECT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "SWITCH": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "boxShadow": "none"
+                        },
+                        "TEXT_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        }
+                      },
+                      "disabledWhenInvalid": true,
+                      "borderRadius": "0px",
+                      "boxShadowColor": "#F6F7F8"
+                    }
+                  ],
+                  "isDisabled": false,
+                  "key": "f3u1tc6wg0",
+                  "labelTextSize": "0.875rem",
+                  "tabName": "Authenticated",
+                  "rightColumn": 301.5,
+                  "detachFromLayout": true,
+                  "widgetId": "qtimltgqwu",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "y3mgh3y8mv",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "0px"
+                },
+                {
+                  "tabId": "tab2",
+                  "boxShadow": "none",
+                  "widgetName": "Canvas2",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 390,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 400,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Text1",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 2,
+                      "bottomRow": 6,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "parentColumnSpace": 6.75390625,
+                      "dynamicTriggerPathList": [],
+                      "fontFamily": "System Default",
+                      "leftColumn": 3,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "You are not Logged in. Click here to",
+                      "key": "ftqzlmr0hq",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 33,
+                      "textAlign": "LEFT",
+                      "widgetId": "9zgyv42pgt",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "siga3y90yz",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "fontSize": "0.875rem"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Button1",
+                      "onClick": "{{navigateTo('Login')}}",
+                      "buttonColor": "#03B365",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca02633.svg",
+                      "topRow": 2,
+                      "bottomRow": 6,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 8.5205078125,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 33,
+                      "dynamicBindingPathList": [],
+                      "text": "Login",
+                      "isDisabled": false,
+                      "key": "sd190fs29y",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 49,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "0yx5f9vit7",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "siga3y90yz",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
+                    }
+                  ],
+                  "isDisabled": false,
+                  "key": "f3u1tc6wg0",
+                  "labelTextSize": "0.875rem",
+                  "tabName": "Unauthenticated",
+                  "rightColumn": 301.5,
+                  "detachFromLayout": true,
+                  "widgetId": "siga3y90yz",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "y3mgh3y8mv",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "0px"
+                }
+              ],
+              "key": "8sy8008wt4",
+              "labelTextSize": "0.875rem",
+              "rightColumn": 59,
+              "widgetId": "y3mgh3y8mv",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "defaultTab": "{{IsAuthenticated.check()}}",
+              "shouldShowTabs": true,
+              "tabsObj": {
+                "tab1": {
+                  "label": "Authenticated",
+                  "id": "tab1",
+                  "widgetId": "qtimltgqwu",
+                  "isVisible": true,
+                  "index": 0,
+                  "isDuplicateLabel": false
+                },
+                "tab2": {
+                  "label": "Unauthenticated",
+                  "id": "tab2",
+                  "widgetId": "siga3y90yz",
+                  "isVisible": true,
+                  "index": 1,
+                  "isDuplicateLabel": false
+                }
+              },
+              "isVisible": "true",
+              "version": 3,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0px"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "CreatePage_GeoRegionsSelect",
+              "name": "GeoRegionsSelect",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "CreatePage_VehicleSelectionList",
+              "name": "VehicleSelectionList",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "widgetNames": [
+          "Button1",
+          "Canvas1",
+          "Canvas2",
+          "CreatePageContainer",
+          "Divider1",
+          "Home",
+          "Logout",
+          "MainContainer",
+          "PayoutCampaignForm",
+          "Text1"
+        ],
+        "validOnPageLoadActions": true,
+        "id": "CreatePage",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "policies": [],
+  "gitSyncId": "6260fd83d030f71edbd113b0_626109cdd030f71edbd113ca"
+}

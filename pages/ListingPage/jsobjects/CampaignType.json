@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "CampaignType",
+    "pageId": "ListingPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\t\n\tgetValues: () => {\n\t\treturn [\n\t\t\t{\"label\": \"ORDER_CAMPAIGN\", \"value\": \"0\"},\n\t\t\t{\"label\": \"PERIOD_CAMPAIGN\", \"value\": \"1\"}\n\t\t]\n\t}\n}",
+    "variables": []
+  },
+  "id": "ListingPage_CampaignType",
+  "deleted": false,
+  "gitSyncId": "6260fd83d030f71edbd113b0_62614abad030f71edbd1140c"
+}

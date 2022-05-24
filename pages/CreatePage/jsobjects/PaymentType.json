@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "PaymentType",
+    "pageId": "CreatePage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetValues: () => {\n\t\treturn [\n\t\t\t\t{\n\t\t\t\t\t\"label\": \"INCENTIVE\", \n\t\t\t\t\t\"value\": \"0\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"label\": \"ADJUSTMENT\", \n\t\t\t\t\t\"value\": \"1\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"label\": \"EARNING\", \n\t\t\t\t\t\"value\": \"3\"\n\t\t\t\t}\n\t\t\t]\n\t}\n}",
+    "variables": []
+  },
+  "id": "CreatePage_PaymentType",
+  "deleted": false,
+  "gitSyncId": "6260fd83d030f71edbd113b0_626129a5d030f71edbd113f7"
+}

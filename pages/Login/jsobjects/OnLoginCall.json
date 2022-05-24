@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "OnLoginCall",
+    "pageId": "Login",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetToken:  () => {\n\t\t\n\t\t\tLoginApi.run(() =>{\n\t\t\t\tconst jwt = LoginApi.responseMeta.headers.Authorization[0];\n\t\t\t\tstoreValue(\"jwt\",jwt)\n\t\t\t\tnavigateTo(\"ListingPage\",{})\n\t\t\t},\n\t\t\t() => showAlert(\"Username or password is incorrect\"));\n\t\t\n\t}\n}",
+    "variables": []
+  },
+  "id": "Login_OnLoginCall",
+  "deleted": false,
+  "gitSyncId": "6260fd83d030f71edbd113b0_62666de3d030f71edbd11441"
+}

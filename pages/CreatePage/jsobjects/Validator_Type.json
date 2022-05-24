@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Validator_Type",
+    "pageId": "CreatePage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetValues: () => {\n\t\treturn [\n\t\t\t{\"label\": \"MIN_DRYRUN\", \"value\": \"0\"},\n\t\t\t{\"label\": \"CANCEL_REASON\", \"value\": \"1\"},\n\t\t\t{\"label\": \"ORDER_STATUS\", \"value\": \"2\"},\n\t\t\t{\"label\": \"ORDER_VEHICLE\", \"value\": \"3\"},\n\t\t\t{\"label\": \"DRIVER_VEHICLE_ORDER\", \"value\": \"4\"},\n\t\t\t{\"label\": \"FLEXI_ORDER\", \"value\": \"5\"},\n\t\t\t{\"label\": \"ORDER_ZONE\", \"value\": \"6\"},\n\t\t\t{\"label\": \"ORDER_LOGIN_HOURS\", \"value\": \"7\"},\n\t\t\t{\"label\": \"ORDER_FREELANCE_DRIVER\", \"value\": \"8\"},\n\t\t\t{\"label\": \"PERIOD_FREELANCE_DRIVER\", \"value\": \"1000\"},\n\t\t\t{\"label\": \"PERIOD_LOGIN_HOURS\", \"value\": \"1001\"},\n\t\t\t{\"label\": \"ORDER_COUNT\", \"value\": \"1002\"},\n\t\t\t{\"label\": \"PENALTY_COUNT\", \"value\": \"1003\"},\n\t\t\t{\"label\": \"PENALTY_EXEMPTION\", \"value\": \"1004\"},\n\t\t\t{\"label\": \"DRIVER_VEHICLE_PERIOD\", \"value\": \"1005\"},\n\t\t\t{\"label\": \"CAMPAIGN_ENROLLMENT\", \"value\": \"1006\"},\n\t\t\t{\"label\": \"SPECIAL_PENALTY_COUNT\", \"value\": \"1007\"},\n\t\t\t{\"label\": \"BUFFERED_PERIOD_LOGIN_HOURS\", \"value\": \"1008\"},\n\t\t\t{\"label\": \"DAILY_DRIVER_WORKING_ZONE\", \"value\": \"1009\"}\n\t\t]\n\t}\n}",
+    "variables": []
+  },
+  "id": "CreatePage_Validator_Type",
+  "deleted": false,
+  "gitSyncId": "6260fd83d030f71edbd113b0_626125d0d030f71edbd113dd"
+}

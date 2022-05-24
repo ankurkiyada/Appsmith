@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "CampaignConfigData",
+    "pageId": "ListingPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetCampaignConfig: () => {\n\t\tlet geo_regions = GeoRegion.data;\n\t\tlet vehicles_data = VehicleTypeData.data;\n\t\tlet payout_campaign = CampaignConfig.data;\n\t\t payout_campaign.map(function(config){\n\t\t\t let geo_name = geo_regions.filter(d => d.id == config['geo_region_id'])\n\t\t\t config['city'] =  typeof geo_name !== 'undefined' ? geo_name[0].name : \"Not Defined\";\n\t\t\t let vehicle_type_arr = [];\n\t\t\t if(config['vehicles'].length !=0){\n\t\t\t\t vehicle_type_arr = config['vehicles'].map( (veh)=>vehicles_data.filter(d => d.id == veh)[0])\n\t\t\t }\n\t\t\tconfig['vehicles_name'] =  vehicle_type_arr.reduce( (result, element) => {\n\t\t\t\tif(typeof element != 'undefined')\n\t\t\t\t\t\tresult.push(element.vehicle_type);\n\t\t\t\treturn result;\n\t\t\t}, []);\n\t\t\t \n\t\t\t return config;\n\t\t})\n\n\t\treturn payout_campaign;\n\t\t\n\t},\n\tfindPositions: (arr) => {\n   const indicies = [];\n\t\tif(typeof arr == 'undefined' ||arr.length == 0){\n\t\t\treturn [];\n\t\t}\n   CampaignConfig.data.forEach((element, index) => {\n      if(arr.includes(element.id)){\n         indicies.push(index);\n      }\n   });\n   return indicies;\n\t}\n\t\n}\n",
+    "variables": []
+  },
+  "id": "ListingPage_CampaignConfigData",
+  "deleted": false,
+  "gitSyncId": "6260fd83d030f71edbd113b0_6260ff43d030f71edbd113c0"
+}

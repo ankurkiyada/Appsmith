@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "EngagementType",
+    "pageId": "ListingPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetValues: () => {\n\t\treturn [\n\t\t\t{\n\t\t\t\t\"label\": \"MG\",\n\t\t\t\t\"value\": \"0\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"label\": \"FLEXI\",\n\t\t\t\t\"value\": \"1\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"label\": \"INSTI\",\n\t\t\t\t\"value\": \"2\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"label\": \"TRIP_BASED\",\n\t\t\t\t\"value\": \"3\"\n\t\t\t}\n\t\t]\n\t}\n}",
+    "variables": []
+  },
+  "id": "ListingPage_EngagementType",
+  "deleted": false,
+  "gitSyncId": "6260fd83d030f71edbd113b0_62614ad5d030f71edbd11414"
+}

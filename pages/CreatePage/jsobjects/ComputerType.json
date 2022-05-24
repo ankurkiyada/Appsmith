@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "ComputerType",
+    "pageId": "CreatePage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\t\n\tgetValues: () => {\n\t\treturn [\n\t\t\t{\"label\": \"CAPPED_DRY_RUN\", \"value\": \"0\"},\n\t\t\t{\"label\": \"FLAT_AMOUNT_ORDER\", \"value\": \"1\"},\n\t\t\t{\"label\": \"FIXED_PERCENT_COMMISSION\", \"value\": \"3\"},\n\t\t\t{\"label\": \"TRIP_FARE\", \"value\": \"4\"},\n\t\t\t{\"label\": \"LOGIN_BASED_COMMISSION\", \"value\": \"7\"},\n\t\t\t{\"label\": \"HELPER_CHARGE\", \"value\": \"8\"},\n\t\t\t{\"label\": \"TOLL_CHARGE\", \"value\": \"9\"},\n\t\t\t{\"label\": \"HELPER_PLUS_LABOUR_CHARGE\", \"value\": \"10\"},\n\t\t\t{\"label\": \"VAT\", \"value\": \"11\"},\n\t\t\t{\"label\": \"FLAT_AMOUNT_PERIOD\", \"value\": \"1000\"},\n\t\t\t{\"label\": \"MBG\", \"value\": \"1001\"},\n\t\t]\n\t}\n}",
+    "variables": []
+  },
+  "id": "CreatePage_ComputerType",
+  "deleted": false,
+  "gitSyncId": "6260fd83d030f71edbd113b0_62612790d030f71edbd113e3"
+}

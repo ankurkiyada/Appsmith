@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "TransactionType",
+    "pageId": "CreatePage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetValues: () => {\n\t\treturn [\n\t\t\t{\"label\": \"DRY_RUN_INCV\", \"value\": \"0\"},\n\t\t\t{\"label\": \"TRIP_INCV\", \"value\": \"1\"},\n\t\t\t{\"label\": \"COMMISSION\", \"value\": \"2\"},\n\t\t\t{\"label\": \"TRIP_FARE\", \"value\": \"3\"},\n\t\t\t{\"label\": \"CASH_COLLECTED\", \"value\": \"4\"},\n\t\t\t{\"label\": \"HELPER_CHARGE\", \"value\": \"5\"},\n\t\t\t{\"label\": \"TOLL_CHARGE\", \"value\": \"6\"},\n\t\t\t{\"label\": \"HELPER_PLUS_LABOUR_CHARGE\", \"value\": \"7\"},\n\t\t\t\n\t\t\t{\"label\": \"VAT\", \"value\": \"8\"},\n\t\t\t{\"label\": \"LOGIN_INCV\", \"value\": \"1000\"},\n\t\t\t{\"label\": \"MBG_INCV\", \"value\": \"2000\"},\n\t\t\t{\"label\": \"MANUAL\", \"value\": \"3000\"},\n\t\t\t{\"label\": \"WITHDRAWAL\", \"value\": \"3001\"},\n\t\t\t{\"label\": \"PAYOUT\", \"value\": \"3002\"},\n\t\t\t{\"label\": \"RNR_AWARD\", \"value\": \"3003\"},\n\t\t\t{\"label\": \"RECHARGE\", \"value\": \"3004\"},\n\t\t\t{\"label\": \"PAYMENTS\", \"value\": \"3005\"}\n\t\t]\n\t}\n}",
+    "variables": []
+  },
+  "id": "CreatePage_TransactionType",
+  "deleted": false,
+  "gitSyncId": "6260fd83d030f71edbd113b0_626123e2d030f71edbd113d7"
+}

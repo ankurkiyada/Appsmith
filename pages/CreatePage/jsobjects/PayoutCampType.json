@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "PayoutCampType",
+    "pageId": "CreatePage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\t\n\tgetValues: () => {\n\t\treturn [\n\t\t\t{\"label\": \"TRIP FARE\", \"value\": \"TRIP_FARE\"},\n\t\t\t{\"label\": \"FIXED PERCENT COMMISSION\", \"value\": \"FIXED_PERCENT_COMMISSION\"},\n\t\t\t{\"label\": \"DRYRUN\", \"value\": \"DRYRUN\"}\n\t\t]\n\t}\n}",
+    "variables": []
+  },
+  "id": "CreatePage_PayoutCampType",
+  "deleted": false,
+  "gitSyncId": "6260fd83d030f71edbd113b0_6267def9b739d67b14ebccf6"
+}
