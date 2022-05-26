@@ -11,8 +11,8 @@
     "CreatePage",
     "Login"
   ],
-  "publishedDefaultPageName": "Login",
-  "unpublishedDefaultPageName": "Login",
+  "publishedDefaultPageName": "ListingPage",
+  "unpublishedDefaultPageName": "ListingPage",
   "invisibleActionFields": {
     "CreatePage_CampaignType.getValues": {
       "unpublishedUserSetOnLoad": false,
@@ -111,10 +111,6 @@
       "publishedUserSetOnLoad": false
     },
     "ListingPage_VehicleTypeData": {
-      "unpublishedUserSetOnLoad": false,
-      "publishedUserSetOnLoad": false
-    },
-    "Login_Api1": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
