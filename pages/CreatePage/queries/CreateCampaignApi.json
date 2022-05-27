@@ -7,8 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "sshProxyEnabled": false,
-        "url": "https://{{appsmith.store.vp_host}}"
+        "url": "https://{{appsmith.store.configuration.vp_host}}"
       },
       "invalids": [],
       "messages": [],
@@ -29,7 +28,7 @@
         },
         {
           "key": "AUTH_TOKEN",
-          "value": "{{appsmith.store.auth_token}}"
+          "value": "{{appsmith.store.configuration.auth_token}}"
         }
       ],
       "encodeParamsToggle": true,
@@ -42,7 +41,7 @@
         }
       ],
       "formData": {
-        "apiContentType": "none"
+        "apiContentType": "application/json"
       }
     },
     "executeOnLoad": false,
@@ -61,9 +60,9 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.auth_token",
       "appsmith.store.campaign_body",
-      "appsmith.store.vp_host"
+      "appsmith.store.configuration.auth_token",
+      "appsmith.store.configuration.vp_host"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

@@ -13,8 +13,8 @@
     "Login",
     "Configuration Page"
   ],
-  "publishedDefaultPageName": "ListingPage",
-  "unpublishedDefaultPageName": "ListingPage",
+  "publishedDefaultPageName": "Configuration Page",
+  "unpublishedDefaultPageName": "Configuration Page",
   "invisibleActionFields": {
     "Configuration Page_Configuration.get": {
       "unpublishedUserSetOnLoad": false,

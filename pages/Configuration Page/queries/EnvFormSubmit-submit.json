@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\tlet data = Configuration.get()[EnvironmentSelectionMenu.selectedOptionValue]\n\t\tstoreValue(\"configuration\",data);\n\t\tconsole.log(data)\n\t\treturn appsmith.store.configuration;\n\t}",
+      "body": "() => {\n\t\tlet data = Configuration.get()[EnvironmentSelectionMenu.selectedOptionValue]\n\t\tstoreValue(\"configuration\",data);\n\t\tnavigateTo(\"ListingPage\");\n\t}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\tlet data = Configuration.get()[EnvironmentSelectionMenu.selectedOptionValue]\n\t\tstoreValue(\"configuration\",data);\n\t\tconsole.log(data)\n\t\treturn appsmith.store.configuration;\n\t}"
+      "() => {\n\t\tlet data = Configuration.get()[EnvironmentSelectionMenu.selectedOptionValue]\n\t\tstoreValue(\"configuration\",data);\n\t\tnavigateTo(\"ListingPage\");\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

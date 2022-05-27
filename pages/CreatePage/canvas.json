@@ -376,9 +376,9 @@
                                       "originalIdentifier": "min_kms",
                                       "iconAlign": "left",
                                       "isDisabled": false,
-                                      "isRequired": false,
+                                      "isRequired": "{{((sourceData, formData, fieldState) => (formData.campaigns.dryrun.active))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
                                       "isSpellCheck": false,
-                                      "isVisible": true,
+                                      "isVisible": "{{((sourceData, formData, fieldState) => (formData.campaigns.dryrun.active))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
                                       "label": "Min Kms",
                                       "labelTextSize": "0.875rem",
                                       "borderRadius": "0px",
@@ -400,9 +400,9 @@
                                       "originalIdentifier": "incv_km_cap",
                                       "iconAlign": "left",
                                       "isDisabled": false,
-                                      "isRequired": false,
+                                      "isRequired": "{{((sourceData, formData, fieldState) => (formData.campaigns.dryrun.active))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
                                       "isSpellCheck": false,
-                                      "isVisible": true,
+                                      "isVisible": "{{((sourceData, formData, fieldState) => (formData.campaigns.dryrun.active))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
                                       "label": "Incv Km Cap",
                                       "labelTextSize": "0.875rem",
                                       "borderRadius": "0px",
@@ -424,9 +424,9 @@
                                       "originalIdentifier": "per_km_rate",
                                       "iconAlign": "left",
                                       "isDisabled": false,
-                                      "isRequired": false,
+                                      "isRequired": "{{((sourceData, formData, fieldState) => (formData.campaigns.dryrun.active))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
                                       "isSpellCheck": false,
-                                      "isVisible": true,
+                                      "isVisible": "{{((sourceData, formData, fieldState) => (formData.campaigns.dryrun.active))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
                                       "label": "Per Km Rate",
                                       "labelTextSize": "0.875rem",
                                       "borderRadius": "0px",
@@ -622,6 +622,24 @@
                         },
                         {
                           "key": "resetButtonStyles.boxShadow"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.min_kms.isVisible"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.min_kms.isRequired"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.incv_km_cap.isRequired"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.incv_km_cap.isVisible"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.per_km_rate.isRequired"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.per_km_rate.isVisible"
                         }
                       ],
                       "displayName": "JSON Form",
@@ -693,6 +711,24 @@
                         },
                         {
                           "key": "schema.__root_schema__.children.campaigns.children.dryrun.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.min_kms.isVisible"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.min_kms.isRequired"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.incv_km_cap.isRequired"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.incv_km_cap.isVisible"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.per_km_rate.isRequired"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.per_km_rate.isVisible"
                         }
                       ],
                       "sourceData": "{ \n\t\"city\": \"\",\n\t\"vehicle\": \"\",\n\t\"campaigns\": {\n\t\n\t\t\t\"trip_fare\":{\n\t\t\t\t\"active\": false\n\t\t\t},\n\t\t\t\"dryrun\": {\n\t\t\t\t\"active\": false,\n\t\t\t\t\"min_kms\": 2,\n\t\t\t\t\"incv_km_cap\": 10,\n\t\t\t\t\"per_km_rate\": 8\n\t\t\t},\n\t\t\t\t\"fixed_percent_commission\":{\n\t\t\t\t\t\"active\": false,\t\t\t\t\"commission_fraction\": 0.15\n\t\t\t}\n\t}\n}",
