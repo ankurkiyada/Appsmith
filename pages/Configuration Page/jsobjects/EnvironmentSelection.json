@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "EnvironmentSelection",
+    "pageId": "Configuration Page",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\t\n\tonSelect: () => {\n\t\tlet data = Configuration.get()[Environments.selectedOptionValue]\n\t\tstoreValue(\"configuration\",data);\n\t\tconsole.log(data)\n\t\treturn appsmith.store.configuration;\n\t}\n}",
+    "variables": []
+  },
+  "id": "Configuration Page_EnvironmentSelection",
+  "deleted": false,
+  "gitSyncId": "6260fd83d030f71edbd113b0_628e693e8c0a8266b7026bb1"
+}

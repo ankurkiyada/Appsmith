@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Configuration",
+    "pageId": "Configuration Page",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\n\tget: () => {\n\t\treturn {\n\t\t\t\"staging\": {\"name\": \"staging\"},\n\t\t\t\"development\":{ \"name\":\"development\"},\n\t\t\t\"production\": {\"name\": \"production\"}\n\t\t}\n\t}\n\t\n}",
+    "variables": []
+  },
+  "id": "Configuration Page_Configuration",
+  "deleted": false,
+  "gitSyncId": "6260fd83d030f71edbd113b0_628e698e8c0a8266b7026bb7"
+}
