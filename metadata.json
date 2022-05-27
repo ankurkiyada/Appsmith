@@ -4,16 +4,30 @@
   "pageOrder": [
     "ListingPage",
     "CreatePage",
-    "Login"
+    "Login",
+    "Configuration Page"
   ],
   "publishedPageOrder": [
     "ListingPage",
     "CreatePage",
-    "Login"
+    "Login",
+    "Configuration Page"
   ],
   "publishedDefaultPageName": "ListingPage",
   "unpublishedDefaultPageName": "ListingPage",
   "invisibleActionFields": {
+    "Configuration Page_Configuration.get": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "Configuration Page_EnvironmentSelection.onSelect": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "Configuration Page_environments.getEnvironments": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
     "CreatePage_CampaignType.getValues": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
