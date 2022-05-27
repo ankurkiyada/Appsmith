@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "getEnvironments",
-    "fullyQualifiedName": "environments.getEnvironments",
+    "name": "submit",
+    "fullyQualifiedName": "EnvFormSubmit.submit",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,14 +14,14 @@
       "userPermissions": []
     },
     "pageId": "Configuration Page",
-    "collectionId": "Configuration Page_environments",
+    "collectionId": "Configuration Page_EnvFormSubmit",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\treturn [\n\t\t\t{ \"label\": \"Production\",\"value\": \"production\"},\n\t\t\t{ \"label\": \"Staging\",\"value\": \"staging\"},\n\t\t\t{ \"label\": \"Development\",\"value\": \"development\"}\n\t\t]\n\t}",
+      "body": "() => {\n\t\tlet data = Configuration.get()[EnvironmentSelectionMenu.selectedOptionValue]\n\t\tstoreValue(\"configuration\",data);\n\t\tconsole.log(data)\n\t\treturn appsmith.store.configuration;\n\t}",
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "clientSideExecution": true,
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\treturn [\n\t\t\t{ \"label\": \"Production\",\"value\": \"production\"},\n\t\t\t{ \"label\": \"Staging\",\"value\": \"staging\"},\n\t\t\t{ \"label\": \"Development\",\"value\": \"development\"}\n\t\t]\n\t}"
+      "() => {\n\t\tlet data = Configuration.get()[EnvironmentSelectionMenu.selectedOptionValue]\n\t\tstoreValue(\"configuration\",data);\n\t\tconsole.log(data)\n\t\treturn appsmith.store.configuration;\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Configuration Page_environments.getEnvironments",
+  "id": "Configuration Page_EnvFormSubmit.submit",
   "deleted": false,
-  "gitSyncId": "6260fd83d030f71edbd113b0_628e67798c0a8266b7026ba8"
+  "gitSyncId": "6260fd83d030f71edbd113b0_628e693e8c0a8266b7026bae"
 }

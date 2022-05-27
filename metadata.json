@@ -20,11 +20,11 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "Configuration Page_EnvironmentSelection.onSelect": {
+    "Configuration Page_EnvFormSubmit.submit": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "Configuration Page_environments.getEnvironments": {
+    "Configuration Page_EnvironMentSelectionOption.getEnvironments": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
@@ -117,10 +117,6 @@
       "publishedUserSetOnLoad": false
     },
     "ListingPage_PayoutType.getValues": {
-      "unpublishedUserSetOnLoad": false,
-      "publishedUserSetOnLoad": false
-    },
-    "ListingPage_Query1": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },

@@ -26,49 +26,199 @@
           "leftColumn": 0,
           "children": [
             {
-              "boxShadow": "none",
-              "widgetName": "Environments",
-              "isFilterable": false,
-              "displayName": "Select",
-              "iconSVG": "/static/media/icon.bd99caba.svg",
-              "labelText": "Environments",
-              "topRow": 15,
-              "bottomRow": 19,
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "EnvironmentForm",
+              "isCanvas": true,
+              "displayName": "Form",
+              "iconSVG": "/static/media/icon.ea3e08d1.svg",
+              "topRow": 8,
+              "bottomRow": 35,
               "parentRowSpace": 10,
-              "labelWidth": "8",
-              "type": "SELECT_WIDGET",
-              "serverSideFiltering": false,
+              "type": "FORM_WIDGET",
               "hideCard": false,
-              "defaultOptionValue": "",
               "animateLoading": true,
               "parentColumnSpace": 12.5625,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 18,
+              "leftColumn": 20,
               "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                },
                 {
                   "key": "borderRadius"
                 },
                 {
-                  "key": "options"
+                  "key": "boxShadow"
                 }
               ],
-              "labelPosition": "Left",
-              "options": "{{environments.getEnvironments()}}",
-              "placeholderText": "Select option",
-              "isDisabled": false,
-              "key": "qiqtfa90mx",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "rightColumn": 47,
-              "widgetId": "6f7qc69jpt",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "children": [
+                {
+                  "boxShadow": "none",
+                  "widgetName": "Canvas1",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 390,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "hideCard": true,
+                  "minHeight": 400,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [
+                    {
+                      "key": "borderRadius"
+                    },
+                    {
+                      "key": "accentColor"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "widgetName": "Text1",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Select Environment",
+                      "key": "op6bt8b5ke",
+                      "rightColumn": 63,
+                      "textAlign": "CENTER",
+                      "widgetId": "8im7961hx9",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "oq2vsshf6q",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "fontSize": "1.25rem"
+                    },
+                    {
+                      "resetFormOnClick": true,
+                      "boxShadow": "none",
+                      "widgetName": "EnvironmentsSubmit",
+                      "onClick": "{{EnvFormSubmit.submit()}}",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "displayName": "FormButton",
+                      "iconSVG": "/static/media/icon.cca02633.svg",
+                      "topRow": 20,
+                      "bottomRow": 24,
+                      "type": "FORM_BUTTON_WIDGET",
+                      "hideCard": true,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 21,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "Submit",
+                      "key": "37kwdfahm4",
+                      "rightColumn": 43,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "h4c11s94me",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "oq2vsshf6q",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "disabledWhenInvalid": true,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "EnvironmentSelectionMenu",
+                      "isFilterable": false,
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba.svg",
+                      "labelText": "",
+                      "topRow": 11,
+                      "bottomRow": 15,
+                      "parentRowSpace": 10,
+                      "labelWidth": "8",
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "",
+                      "animateLoading": true,
+                      "parentColumnSpace": 12.5625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 4,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "options"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "options": "{{EnvironMentSelectionOption.getEnvironments()}}",
+                      "placeholderText": "Select Environments",
+                      "isDisabled": false,
+                      "key": "qiqtfa90mx",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": true,
+                      "rightColumn": 59,
+                      "widgetId": "6f7qc69jpt",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "oq2vsshf6q",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                    }
+                  ],
+                  "key": "bmfrabx5x4",
+                  "rightColumn": 301.5,
+                  "detachFromLayout": true,
+                  "widgetId": "oq2vsshf6q",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "containerStyle": "none",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "sudg5udxda",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              ],
+              "key": "fuvoujr5em",
+              "backgroundColor": "#FFFFFF",
+              "rightColumn": 44,
+              "widgetId": "sudg5udxda",
               "isVisible": true,
-              "version": 1,
               "parentId": "0",
-              "labelAlignment": "left",
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
@@ -77,8 +227,12 @@
         },
         "layoutOnLoadActions": [],
         "widgetNames": [
-          "Environments",
-          "MainContainer"
+          "Canvas1",
+          "EnvironmentForm",
+          "EnvironmentSelectionMenu",
+          "EnvironmentsSubmit",
+          "MainContainer",
+          "Text1"
         ],
         "validOnPageLoadActions": true,
         "id": "Configuration Page",
