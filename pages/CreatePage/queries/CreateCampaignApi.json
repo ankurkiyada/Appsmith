@@ -7,8 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "sshProxyEnabled": false,
-        "url": "https://4fad-202-83-18-243.in.ngrok.io"
+        "url": "https://{{appsmith.store.vp_host}}"
       },
       "invalids": [],
       "messages": [],
@@ -26,6 +25,10 @@
         {
           "key": "content-type",
           "value": "application/json"
+        },
+        {
+          "key": "AUTH_TOKEN",
+          "value": "{{appsmith.store.auth_token}}"
         }
       ],
       "encodeParamsToggle": true,
@@ -45,13 +48,21 @@
     "dynamicBindingPathList": [
       {
         "key": "body"
+      },
+      {
+        "key": "datasourceUrl"
+      },
+      {
+        "key": "headers[1].value"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.campaign_body"
+      "appsmith.store.auth_token",
+      "appsmith.store.campaign_body",
+      "appsmith.store.vp_host"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
