@@ -49,9 +49,6 @@
               "dynamicBindingPathList": [
                 {
                   "key": "defaultTab"
-                },
-                {
-                  "key": "accentColor"
                 }
               ],
               "children": [
@@ -213,7 +210,8 @@
                               "cellBorderRadius": "0px",
                               "boxShadow": "none",
                               "cellBoxShadow": "none",
-                              "accentColor": "#03B365"
+                              "accentColor": "#03B365",
+                              "placeholderText": "{{((sourceData, formData, fieldState) => (`Select a City`))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}"
                             },
                             "campaigns": {
                               "children": {
@@ -246,25 +244,24 @@
                                       "children": {},
                                       "dataType": "number",
                                       "defaultValue": "",
-                                      "fieldType": "Number Input",
+                                      "fieldType": "Select",
                                       "sourceData": 0.15,
                                       "isCustomField": false,
                                       "accessor": "commission_fraction",
                                       "identifier": "commission_fraction",
                                       "position": 1,
                                       "originalIdentifier": "commission_fraction",
-                                      "iconAlign": "left",
+                                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                      "boxShadow": "none",
                                       "isDisabled": false,
+                                      "isFilterable": false,
                                       "isRequired": "{{((sourceData, formData, fieldState) => (formData.campaigns.fixed_percent_commission.active))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
-                                      "isSpellCheck": false,
                                       "isVisible": "{{((sourceData, formData, fieldState) => (formData.campaigns.fixed_percent_commission.active))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
                                       "label": "Commission Fraction",
                                       "labelTextSize": "0.875rem",
-                                      "borderRadius": "0px",
-                                      "cellBorderRadius": "0px",
-                                      "boxShadow": "none",
-                                      "cellBoxShadow": "none",
-                                      "accentColor": "#03B365"
+                                      "serverSideFiltering": false,
+                                      "options": "{{PercentageSelecInput.getInput()}}"
                                     }
                                   },
                                   "dataType": "object",
@@ -460,6 +457,74 @@
                                   "boxShadow": "none",
                                   "cellBoxShadow": "none",
                                   "accentColor": "#03B365"
+                                },
+                                "login_incentive": {
+                                  "children": {
+                                    "active": {
+                                      "children": {},
+                                      "dataType": "boolean",
+                                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.campaigns.login_incentive.active))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                                      "fieldType": "Switch",
+                                      "sourceData": false,
+                                      "isCustomField": false,
+                                      "accessor": "active",
+                                      "identifier": "active",
+                                      "position": 0,
+                                      "originalIdentifier": "active",
+                                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                                      "boxShadow": "none",
+                                      "alignWidget": "LEFT",
+                                      "isDisabled": false,
+                                      "isRequired": false,
+                                      "isVisible": true,
+                                      "labelTextSize": "0.875rem",
+                                      "label": "Active"
+                                    },
+                                    "incentive_amount": {
+                                      "children": {},
+                                      "dataType": "number",
+                                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.campaigns.login_incentive.incentive_amount))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                                      "fieldType": "Number Input",
+                                      "sourceData": 200,
+                                      "isCustomField": false,
+                                      "accessor": "incentive_amount",
+                                      "identifier": "incentive_amount",
+                                      "position": 1,
+                                      "originalIdentifier": "incentive_amount",
+                                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                      "boxShadow": "none",
+                                      "iconAlign": "left",
+                                      "isDisabled": false,
+                                      "isRequired": "{{((sourceData, formData, fieldState) => (formData.campaigns.login_incentive.active))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                                      "isSpellCheck": false,
+                                      "isVisible": "{{((sourceData, formData, fieldState) => (formData.campaigns.login_incentive.active))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                                      "labelTextSize": "0.875rem",
+                                      "label": "Incentive Amount",
+                                      "maxNum": "2000"
+                                    }
+                                  },
+                                  "dataType": "object",
+                                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.campaigns.login_incentive))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                                  "fieldType": "Object",
+                                  "sourceData": {
+                                    "active": false,
+                                    "incentive_amount": 200
+                                  },
+                                  "isCustomField": false,
+                                  "accessor": "login_incentive",
+                                  "identifier": "login_incentive",
+                                  "position": 3,
+                                  "originalIdentifier": "login_incentive",
+                                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "boxShadow": "none",
+                                  "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "cellBoxShadow": "none",
+                                  "isDisabled": false,
+                                  "isRequired": false,
+                                  "isVisible": true,
+                                  "labelTextSize": "0.875rem",
+                                  "label": "Login Incentive"
                                 }
                               },
                               "dataType": "object",
@@ -469,21 +534,25 @@
                                 "trip_fare": {
                                   "active": false
                                 },
-                                "fixed_percent_commission": {
-                                  "active": false,
-                                  "commission_fraction": 0.15
-                                },
                                 "dryrun": {
                                   "active": false,
                                   "min_kms": 2,
                                   "incv_km_cap": 10,
                                   "per_km_rate": 8
+                                },
+                                "fixed_percent_commission": {
+                                  "active": false,
+                                  "commission_fraction": 0.15
+                                },
+                                "login_incentive": {
+                                  "active": false,
+                                  "incentive_amount": 200
                                 }
                               },
                               "isCustomField": false,
                               "accessor": "campaigns",
                               "identifier": "campaigns",
-                              "position": 2,
+                              "position": 4,
                               "originalIdentifier": "campaigns",
                               "isDisabled": false,
                               "isRequired": false,
@@ -523,6 +592,60 @@
                               "boxShadow": "none",
                               "cellBoxShadow": "none",
                               "accentColor": "#03B365"
+                            },
+                            "campaign_start_date": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "",
+                              "fieldType": "Datepicker",
+                              "sourceData": "",
+                              "isCustomField": false,
+                              "accessor": "campaign_start_date",
+                              "identifier": "campaign_start_date",
+                              "position": 2,
+                              "originalIdentifier": "campaign_start_date",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "boxShadow": "none",
+                              "closeOnSelection": true,
+                              "convertToISO": false,
+                              "dateFormat": "YYYY-MM-DD",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "isVisible": true,
+                              "label": "Start Date",
+                              "maxDate": "2121-12-31T18:29:00.000Z",
+                              "shortcuts": false,
+                              "timePrecision": "minute",
+                              "labelTextSize": "0.875rem",
+                              "minDate": "{{((sourceData, formData, fieldState) => (moment().clone().add(1,'days')))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}"
+                            },
+                            "campaign_end_date": {
+                              "children": {},
+                              "dataType": "string",
+                              "fieldType": "Datepicker",
+                              "sourceData": "",
+                              "isCustomField": false,
+                              "accessor": "campaign_end_date",
+                              "identifier": "campaign_end_date",
+                              "position": 3,
+                              "originalIdentifier": "campaign_end_date",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "boxShadow": "none",
+                              "closeOnSelection": true,
+                              "convertToISO": false,
+                              "dateFormat": "YYYY-MM-DD",
+                              "isDisabled": "{{((sourceData, formData, fieldState) => (PayoutCampaignForm.formData.campaign_start_date == undefined || PayoutCampaignForm.formData.campaign_start_date == \"\"))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                              "isRequired": true,
+                              "isVisible": true,
+                              "label": "End Date",
+                              "maxDate": "2121-12-31T18:29:00.000Z",
+                              "minDate": "{{((sourceData, formData, fieldState) => (PayoutCampaignForm.formData.campaign_start_date || moment().clone().add(1,'days')))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}",
+                              "shortcuts": false,
+                              "timePrecision": "minute",
+                              "labelTextSize": "0.875rem",
+                              "tooltip": "{{((sourceData, formData, fieldState) => (`Select Start date first`))(PayoutCampaignForm.sourceData, PayoutCampaignForm.formData, PayoutCampaignForm.fieldState)}}"
                             }
                           },
                           "dataType": "object",
@@ -531,19 +654,25 @@
                           "sourceData": {
                             "city": "",
                             "vehicle": "",
+                            "campaign_start_date": "",
+                            "campaign_end_date": "",
                             "campaigns": {
                               "trip_fare": {
                                 "active": false
-                              },
-                              "fixed_percent_commission": {
-                                "active": false,
-                                "commission_fraction": 0.15
                               },
                               "dryrun": {
                                 "active": false,
                                 "min_kms": 2,
                                 "incv_km_cap": 10,
                                 "per_km_rate": 8
+                              },
+                              "fixed_percent_commission": {
+                                "active": false,
+                                "commission_fraction": 0.15
+                              },
+                              "login_incentive": {
+                                "active": false,
+                                "incentive_amount": 200
                               }
                             }
                           },
@@ -552,16 +681,15 @@
                           "identifier": "__root_schema__",
                           "position": -1,
                           "originalIdentifier": "__root_schema__",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "cellBoxShadow": "none",
                           "isDisabled": false,
                           "isRequired": false,
                           "isVisible": true,
-                          "label": "",
                           "labelTextSize": "0.875rem",
-                          "borderRadius": "0px",
-                          "cellBorderRadius": "0px",
-                          "boxShadow": "none",
-                          "cellBoxShadow": "none",
-                          "accentColor": "#03B365"
+                          "label": ""
                         }
                       },
                       "boxShadow": "0px 1px 3px #F6F7F8",
@@ -640,6 +768,27 @@
                         },
                         {
                           "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.per_km_rate.isVisible"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaign_end_date.minDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaign_start_date.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaign_start_date.minDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaign_end_date.isDisabled"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.login_incentive.children.active.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.login_incentive.children.incentive_amount.isVisible"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.login_incentive.children.incentive_amount.isRequired"
                         }
                       ],
                       "displayName": "JSON Form",
@@ -662,55 +811,43 @@
                       "leftColumn": 18,
                       "dynamicBindingPathList": [
                         {
-                          "key": "schema.__root_schema__.children.campaigns.children.trip_fare.children.active.defaultValue"
+                          "key": "schema.__root_schema__.children.campaign_end_date.borderRadius"
                         },
                         {
-                          "key": "schema.__root_schema__.children.campaigns.children.fixed_percent_commission.children.commission_fraction.isVisible"
+                          "key": "schema.__root_schema__.children.campaign_end_date.accentColor"
                         },
                         {
-                          "key": "schema.__root_schema__.children.campaigns.children.fixed_percent_commission.children.commission_fraction.isRequired"
+                          "key": "schema.__root_schema__.children.campaign_start_date.borderRadius"
                         },
                         {
-                          "key": "schema.__root_schema__.children.campaigns.children.fixed_percent_commission.children.active.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.city.options"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.campaigns.children.fixed_percent_commission.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.campaigns.children.trip_fare.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.campaigns.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.vehicle.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.defaultValue"
-                        },
-                        {
-                          "key": "schema.__root_schema__.children.vehicle.options"
+                          "key": "schema.__root_schema__.children.campaign_start_date.accentColor"
                         },
                         {
                           "key": "schema.__root_schema__.children.vehicle.placeholderText"
                         },
                         {
-                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.active.defaultValue"
+                          "key": "schema.__root_schema__.children.vehicle.defaultValue"
                         },
                         {
-                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.min_kms.defaultValue"
+                          "key": "schema.__root_schema__.children.vehicle.options"
                         },
                         {
-                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.incv_km_cap.defaultValue"
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.per_km_rate.isVisible"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.per_km_rate.isRequired"
                         },
                         {
                           "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.per_km_rate.defaultValue"
                         },
                         {
-                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.defaultValue"
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.incv_km_cap.isVisible"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.incv_km_cap.isRequired"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.incv_km_cap.defaultValue"
                         },
                         {
                           "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.min_kms.isVisible"
@@ -719,19 +856,103 @@
                           "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.min_kms.isRequired"
                         },
                         {
-                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.incv_km_cap.isRequired"
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.min_kms.defaultValue"
                         },
                         {
-                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.incv_km_cap.isVisible"
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.active.defaultValue"
                         },
                         {
-                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.per_km_rate.isRequired"
+                          "key": "schema.__root_schema__.children.campaigns.children.trip_fare.children.active.defaultValue"
                         },
                         {
-                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.children.per_km_rate.isVisible"
+                          "key": "schema.__root_schema__.children.campaigns.children.fixed_percent_commission.children.commission_fraction.isRequired"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.fixed_percent_commission.children.active.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.city.placeholderText"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.city.options"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaign_end_date.minDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaign_start_date.minDate"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaign_end_date.isDisabled"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaign_end_date.tooltip"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.fixed_percent_commission.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.trip_fare.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.dryrun.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.login_incentive.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.login_incentive.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.login_incentive.cellBorderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.cellBorderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.login_incentive.children.active.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.login_incentive.children.active.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.login_incentive.children.incentive_amount.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.login_incentive.children.incentive_amount.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.login_incentive.children.incentive_amount.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.login_incentive.children.incentive_amount.isVisible"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.login_incentive.children.incentive_amount.isRequired"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.fixed_percent_commission.children.commission_fraction.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.fixed_percent_commission.children.commission_fraction.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.fixed_percent_commission.children.commission_fraction.options"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaigns.children.fixed_percent_commission.children.commission_fraction.isVisible"
                         }
                       ],
-                      "sourceData": "{ \n\t\"city\": \"\",\n\t\"vehicle\": \"\",\n\t\"campaigns\": {\n\t\n\t\t\t\"trip_fare\":{\n\t\t\t\t\"active\": false\n\t\t\t},\n\t\t\t\"dryrun\": {\n\t\t\t\t\"active\": false,\n\t\t\t\t\"min_kms\": 2,\n\t\t\t\t\"incv_km_cap\": 10,\n\t\t\t\t\"per_km_rate\": 8\n\t\t\t},\n\t\t\t\t\"fixed_percent_commission\":{\n\t\t\t\t\t\"active\": false,\t\t\t\t\"commission_fraction\": 0.15\n\t\t\t}\n\t}\n}",
+                      "sourceData": "{ \n\t\"city\": \"\",\n\t\"vehicle\": \"\",\n\t\"campaign_start_date\": \"\",\n\t\"campaign_end_date\": \"\",\n\t\"campaigns\": {\n\t\n\t\t\t\"trip_fare\":{\n\t\t\t\t\"active\": false\n\t\t\t},\n\t\t\t\"dryrun\": {\n\t\t\t\t\"active\": false,\n\t\t\t\t\"min_kms\": 2,\n\t\t\t\t\"incv_km_cap\": 10,\n\t\t\t\t\"per_km_rate\": 8\n\t\t\t},\n\t\t\t\t\"fixed_percent_commission\":{\n\t\t\t\t\t\"active\": false,\t\t\t\t\"commission_fraction\": 0.15\n\t\t\t},\n\t\t\t\"login_incentive\":{\n\t\t\t\t\t\"active\": false,\n\t\t\t\t\t\"incentive_amount\": 200\n\t\t\t}\n\t}\n}",
                       "showReset": true,
                       "resetButtonLabel": "Reset",
                       "key": "yty34hvdju",
@@ -969,7 +1190,7 @@
               "widgetId": "y3mgh3y8mv",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "defaultTab": "{{IsAuthenticated.check()}}",
-              "shouldShowTabs": true,
+              "shouldShowTabs": false,
               "tabsObj": {
                 "tab1": {
                   "label": "Authenticated",

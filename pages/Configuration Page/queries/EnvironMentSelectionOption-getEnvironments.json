@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\treturn [\n\t\t\t{ \"label\": \"Production\",\"value\": \"production\"},\n\t\t\t{ \"label\": \"Staging-1\",\"value\": \"staging_1\"},\n\t\t\t{ \"label\": \"Staging-2\",\"value\": \"staging_2\"},\n\t\t\t{ \"label\": \"Staging-3\",\"value\": \"staging_3\"}\n\t\t]\n\t}",
+      "body": "() => {\n\t\treturn [\n\t\t\t{ \"label\": \"Production\",\"value\": \"production\"},\n\t\t\t{ \"label\": \"Staging-1\",\"value\": \"staging_1\"},\n\t\t\t{ \"label\": \"Staging-2\",\"value\": \"staging_2\"},\n\t\t\t{ \"label\": \"Development\",\"value\": \"development\"}\n\t\t]\n\t}",
       "jsArguments": [],
       "isAsync": false
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\treturn [\n\t\t\t{ \"label\": \"Production\",\"value\": \"production\"},\n\t\t\t{ \"label\": \"Staging-1\",\"value\": \"staging_1\"},\n\t\t\t{ \"label\": \"Staging-2\",\"value\": \"staging_2\"},\n\t\t\t{ \"label\": \"Staging-3\",\"value\": \"staging_3\"}\n\t\t]\n\t}"
+      "() => {\n\t\treturn [\n\t\t\t{ \"label\": \"Production\",\"value\": \"production\"},\n\t\t\t{ \"label\": \"Staging-1\",\"value\": \"staging_1\"},\n\t\t\t{ \"label\": \"Staging-2\",\"value\": \"staging_2\"},\n\t\t\t{ \"label\": \"Development\",\"value\": \"development\"}\n\t\t]\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

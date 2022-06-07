@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "DateUtil",
+    "pageId": "CreatePage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\t\n\tgetTomorrowDate: () => {\n\t\tlet today = new Date();\n\t\tlet tomorrow = new Date();\n\t\ttomorrow.setDate(today.getDate() + 1);\n\t\treturn tomorrow\n\t},\n\t\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+    "variables": []
+  },
+  "id": "CreatePage_DateUtil",
+  "deleted": false,
+  "gitSyncId": "6290929de0a8a455a2a491b5_629ef106e0a8a455a2a4921c"
+}

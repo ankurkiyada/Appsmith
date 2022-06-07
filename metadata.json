@@ -44,6 +44,14 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
+    "CreatePage_DateUtil.getTomorrowDate": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "CreatePage_DateUtil.myFun2": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
     "CreatePage_EngagementType.getValues": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
@@ -65,6 +73,10 @@
       "publishedUserSetOnLoad": false
     },
     "CreatePage_PayoutCampType.getValues": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "CreatePage_PercentageSelecInput.getInput": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },

@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\n\tget: () => {\n\t\treturn {\n\t\t\t\"staging_1\": {\"name\": \"Staging 1\", \"vp_host\": \"vp-staging-1.porter.in\" ,\"auth_token\": \"b87b21504d41c2343a1a2849e45e9547\"},\n\t\t\t\"staging_2\": {\"name\": \"Staging 2\", \"vp_host\": \"vp-staging-2.porter.in\" ,\"auth_token\": \"b87b21504d41c2343a1a2849e45e9547\"},\n\t\t\t\"production\": {\"name\": \"Production\", \"vp_host\": \"vp-prod.porter.in\" ,\"auth_token\": \"10052ec6f81d05ff29bc73114ed2f6df\"}\n\t\t}\n\t}\n\t\n}",
+    "body": "export default {\n\n\tget: () => {\n\t\treturn {\n\t\t\t\"staging_1\": {\"name\": \"Staging 1\", \"vp_host\": \"vp-staging-1.porter.in\" ,\"auth_token\": \"b87b21504d41c2343a1a2849e45e9547\"},\n\t\t\t\"staging_2\": {\"name\": \"Staging 2\", \"vp_host\": \"vp-staging-2.porter.in\" ,\"auth_token\": \"b87b21504d41c2343a1a2849e45e9547\"},\n\t\t\t\"production\": {\"name\": \"Production\", \"vp_host\": \"vp-prod.porter.in\" ,\"auth_token\": \"10052ec6f81d05ff29bc73114ed2f6df\"},\n\t\t\t\"development\": {\"name\": \"Development\", \"vp_host\": \"e518-2402-e280-2108-3b8-209a-fa39-eeb-3ded.in.ngrok.io\", \"auth_token\": \"abcd\"}\n\t\t}\n\t}\n\t\n}",
     "variables": []
   },
   "id": "Configuration Page_Configuration",

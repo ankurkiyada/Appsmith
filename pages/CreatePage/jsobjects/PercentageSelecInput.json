@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "PercentageSelecInput",
+    "pageId": "CreatePage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\t\n\tgetInput: () => {\n\t\treturn [\n\t\t\t{\n    \t\t\"label\": \"0.05\",\n    \t\t\"value\": 0.05\n  \t\t},\n  \t\t{\n    \t\t\"label\": \"0.10\",\n    \t\t\"value\": 0.1\n  \t\t},\n  \t\t{\n    \t\t\"label\": \"0.15\",\n    \t\t\"value\": 0.15\n \t\t \t},\n\t\t\t{\n    \t\t\"label\": \"0.20\",\n    \t\t\"value\": 0.2\n  \t\t},\n\t\t\t{\n    \t\t\"label\": \"0.25\",\n    \t\t\"value\": 0.25\n  \t\t},\n  \t\t{\n    \t\t\"label\": \"0.30\",\n    \t\t\"value\": 0.3\n  \t\t},\n\t\t\t{\n    \t\t\"label\": \"0.35\",\n    \t\t\"value\": 0.35\n  \t\t},\n\t\t\t{\n    \t\t\"label\": \"0.40\",\n    \t\t\"value\": 0.4\n  \t\t},\n  \t\t{\n    \t\t\"label\": \"0.45\",\n    \t\t\"value\": 0.45\n  \t\t},\n\t\t\t{\n    \t\t\"label\": \"0.50\",\n    \t\t\"value\": 0.5\n  \t\t}\n\t\t]\n\t}\n}",
+    "variables": []
+  },
+  "id": "CreatePage_PercentageSelecInput",
+  "deleted": false,
+  "gitSyncId": "6290929de0a8a455a2a491b5_629f11eee0a8a455a2a49225"
+}

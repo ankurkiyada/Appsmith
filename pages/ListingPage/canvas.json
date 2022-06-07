@@ -124,6 +124,9 @@
                         },
                         {
                           "key": "accentColor"
+                        },
+                        {
+                          "key": "primaryColumns.params.computedValue"
                         }
                       ],
                       "leftColumn": 2,
@@ -157,18 +160,22 @@
                       "columnSizeMap": {
                         "task": 245,
                         "step": 62,
-                        "status": 75
+                        "status": 75,
+                        "period": 200,
+                        "params": 169,
+                        "id": 70
                       },
                       "widgetName": "PayoutCampaignTable",
                       "defaultPageSize": 0,
                       "columnOrder": [
                         "id",
-                        "city",
                         "vehicles_name",
-                        "geo_region_id",
                         "vehicles",
-                        "type",
+                        "city",
+                        "geo_region_id",
                         "period",
+                        "type",
+                        "params",
                         "commission",
                         "min_kms",
                         "incv_km_cap",
@@ -399,6 +406,25 @@
                           "computedValue": "{{PayoutCampaignTable.sanitizedTableData.map((currentRow) => ( currentRow.vehicles_name))}}",
                           "borderRadius": "0px",
                           "boxShadow": "none"
+                        },
+                        "params": {
+                          "index": 5,
+                          "width": 150,
+                          "id": "params",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "params",
+                          "computedValue": "{{PayoutCampaignTable.sanitizedTableData.map((currentRow) => ( currentRow.params))}}",
+                          "cellBackground": ""
                         }
                       },
                       "onRowSelected": "{{setInterval(() => { \n\t // add code here \n}, 5000)}}",
